@@ -58,9 +58,9 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'main/intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Home',
           },
           {
             href: 'https://github.com/litdevs/docs',
@@ -76,8 +76,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Home',
+                to: '/',
               },
             ],
           },
