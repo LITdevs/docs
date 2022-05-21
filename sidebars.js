@@ -23,8 +23,13 @@ const sidebars = {
     'Modules': [
       "painfull/modules/intro",
       "painfull/modules/technical",
-      "painfull/modules/apis",
-      "painfull/modules/commands"
+      {
+        "placeholder name": [
+          "painfull/modules/apis",
+          "painfull/modules/commands",
+          "painfull/modules/eventhandlers"
+        ]
+      }
     ]
   }],
 

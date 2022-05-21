@@ -14,7 +14,12 @@ The Painfull manifest is a JSON file used by Painfull to get details about the m
     "entrypoints": {
         "hello": "src/hello.js"
     },
-    "locals": "src/locals.json"
+    "locals": "src/locals.json",
+    "eventHandlers": ["messageCreate"],
+    "module_dependencies": [
+        "shark-db",
+        "shark-perms"
+    ]
 }
 ```
 
@@ -84,7 +89,7 @@ You can learn more about implementing commands [here](commands).
 
 
 ```json
-    "locals": "src/locals.json"
+    "locals": "src/locals.json",
 ```
 
 Here you can define the location of the localization file, this file contains the localization for your module, and upon installation of the module gets imported by the Central Localization System (CLS).
@@ -92,3 +97,34 @@ Here you can define the location of the localization file, this file contains th
 You can learn more about implementing localization [here](localization).
 
 
+```json
+    "eventHandlers": ["messageCreate"],
+```
+
+Modules can use event handlers to listen to Discord events. 
+
+You can learn more about the event handler system [here](eventhandlers).
+
+
+```json
+    "module_dependencies": [
+        "nonexistent_module",
+        "@LITdevs/nonexistent_unverified_module",
+        "git://example.invalid/nonexistent_unverified_module_on_different_git.git"
+    ]
+```
+
+Modules can depend on other modules.
+
+:::danger
+
+This has not been implemented yet (do we really need to say this? by the time the docs are revealed to the public it probably is) (if youre seeing this, you should not be here!! go away!!)
+
+:::
+
+
+## Verified modules
+
+Community-made modules can be verified and added to the Painfull-Community organization on GitHub.
+
+By default Painfull will look in this organization for modules when the `install` command is ran without defining another organization or git.
