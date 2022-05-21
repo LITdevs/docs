@@ -1,11 +1,15 @@
 # Intro to Modules
 Painfull is based around "Modules", which are small repositories with a Node project, and a Painfull manifest.
 
+For more technical information, refer to the [Technical details](technical).
+
 ## Installing modules
 
 Painfull core includes a command for installing modules through Discord, `install`.
 
 This command will automatically install the module, and add it to the Painfull config.
+
+If a command adds an API, Painfull must restart after installing. If Painfull is running in pm2, it will restart automatically, otherwise a DM is sent to the owner. 
 
 ### Command syntax
 
@@ -36,7 +40,5 @@ Painfull core also includes a command for uninstalling modules, `uninstall`.
 | module name | no       | Name of the module |
 
 :::caution 
-
-Do not include a organization or full URL.
-
+Do not include a organization or full URL, instead use only the name of the module.
 :::
