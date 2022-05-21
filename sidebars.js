@@ -27,7 +27,8 @@ const sidebars = {
         "placeholder name": [
           "painfull/modules/apis",
           "painfull/modules/commands",
-          "painfull/modules/eventhandlers"
+          "painfull/modules/eventhandlers",
+          "painfull/modules/localization"
         ]
       }
     ]
