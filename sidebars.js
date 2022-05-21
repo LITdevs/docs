@@ -20,8 +20,11 @@ const sidebars = {
       "painfull/intro",
       "painfull/setup"
     ],
-    'Module Creation': [
-      "painfull/modules/intro"
+    'Modules': [
+      "painfull/modules/intro",
+      "painfull/modules/technical",
+      "painfull/modules/apis",
+      "painfull/modules/commands"
     ]
   }],
 
