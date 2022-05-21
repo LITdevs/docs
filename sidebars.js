@@ -28,7 +28,8 @@ const sidebars = {
           "painfull/modules/apis",
           "painfull/modules/commands",
           "painfull/modules/eventhandlers",
-          "painfull/modules/localization"
+          "painfull/modules/localization",
+          "painfull/modules/utils-argument"
         ]
       }
     ]
