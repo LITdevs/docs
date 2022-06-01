@@ -54,7 +54,7 @@ const config = {
         title: 'LIT Devs',
         logo: {
           alt: 'LIT Devs Logo',
-          src: 'img/logo.png',
+          src: 'https://logo.litdevs.org/api/vukky/bg',
         },
         items: [
           {
