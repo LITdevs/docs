@@ -12,9 +12,10 @@ LITauth follows the OAuth 2.0 protocol, im not gonna write docs that are any bet
 | /oauth/authorize | GET | url query you know | `client_id`, `redirect_uri`, `scope` (space seperated) | Redirect your user here to authorize your application |
 
 ### API URLs
-All endpoints require Bearer token in Authorization header.
-| URL | Method | Parameters | Scopes | Description |
+All endpoints marked authorized require Bearer token in Authorization header.
+| URL | Method | Authorized | Parameters | Scopes | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
-| /api/user | GET | none | `identify` | Returns user information, without email |
-| /api/user/email | GET | none | `identify`, `email` | Returns user information with email |
-| /api/avatar | POST | `color` and `background` hex codes | `avatar` | Changes the user avatar, returns 200 OK if successful |
+| /api/user | GET | yes | none | `identify` | Returns user information, without email |
+| /api/user/email | GET | yes | none | `identify`, `email` | Returns user information with email |
+| /api/avatar | POST | yes | `color` and `background` hex codes | `avatar` | Changes the user avatar, returns 200 OK if successful |
+| /api/avatar/:userId | GET | :userId should be the id of the user | none | Returns the user avatar as SVG |
