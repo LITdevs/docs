@@ -14,7 +14,7 @@ LITauth follows the OAuth 2.0 protocol, im not gonna write docs that are any bet
 ### API URLs
 All endpoints marked authorized require Bearer token in Authorization header.
 | URL | Method | Authorized | Parameters | Scopes | Description |
-| ----------- | ----------- | ----------- | ----------- | ----------- |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | /api/user | GET | yes | none | `identify` | Returns user information, without email |
 | /api/user/email | GET | yes | none | `identify`, `email` | Returns user information with email |
 | /api/avatar | POST | yes | `color` and `background` hex codes | `avatar` | Changes the user avatar, returns 200 OK if successful |
