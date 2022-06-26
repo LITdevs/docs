@@ -22,3 +22,4 @@ All endpoints marked authorized require Bearer token in Authorization header.
 | /api/user/email | GET | yes | none | `identify`, `email` | Returns user information with email |
 | /api/avatar | POST | yes | `color` and `background` hex codes | `avatar` | Changes the user avatar, returns 200 OK if successful |
 | /api/avatar/:userId | GET | no | :userId should be the id of the user | none | Returns the user avatar as SVG |
+| /api/avatar/bg/:userId | GET | no | :userId should be the id of the user | none | Returns the user avatar as SVG with the background |
